@@ -1,10 +1,11 @@
 import "./App.css";
+import OutLook from "./pages/OutLook";
 
 function App() {
   return (
-    <>
-      <h1> hello World</h1>
-    </>
+    <div className="main-container">
+      <OutLook />
+    </div>
   );
 }
 
