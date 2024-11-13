@@ -56,7 +56,7 @@ const OutLook = () => {
 
   const handleReadMail = (mailId) => {
     if (addId.read.includes(mailId)) {
-      setAddId((prevId) => ({ ...prevId, read: [prevId] }));
+      setAddId((prevId) => ({ ...prevId }));
     } else {
       setAddId((prevaddId) => ({
         ...prevaddId,
@@ -178,7 +178,7 @@ const OutLook = () => {
                         </div>
                       </div>
                     </div>
-                    <div>
+                    <div className="w-full">
                       <div className="flex w-full">
                         <p>From:</p>
 
@@ -195,7 +195,7 @@ const OutLook = () => {
                         <p
                           className={
                             showSingleMailDetials
-                              ? `truncate py-3 max-w-[300px]`
+                              ? `truncate py-3 max-w-[350px]`
                               : `w-100 py-3`
                           }
                         >
